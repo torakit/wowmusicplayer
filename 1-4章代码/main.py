@@ -568,12 +568,10 @@ class Ui_Form(object):
     
     def importfile(self):
         filex , check = QFileDialog.getOpenFileName(None, "QFileDialog.getOpenFileName()",
-                                               "", "All Files (*);;CE路由器 文件 (*.txt);;Text Files (*.txt)")
+                                               "", "All Files (*);;mp3文件 (*.mp3)")
         if check:
             print(filex)
-        
-        
-        
+
         from pathlib import Path
         path = Path(filex)
         filename=path.name
